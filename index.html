@@ -86,7 +86,9 @@ h2 {
 	<audio id="floormp">
 		<source src="floor.mp3" type="audio/mpeg">
 	</audio>
-
+	<audio id="but">
+		<source src="but.mp3" type="audio/mpeg">
+	</audio>
 
 	  <h1 id="po">10월31일 오전 7시 34분</h1>
 	  <h1 id="poo">3공학관 디자인 학과</h1>
@@ -133,12 +135,13 @@ var toggle = "off";
 			toggle = "on";
 			bx.style.opacity = 1;
 			poom.style.display = "inline";
-			poom2.style.display = "none";}
+			poom2.style.display = "none";
+		but.play();}
 			else{
 			toggle = "off";
 			bx.style.opacity = 0;
 			poom.style.display = "none";
-			
+			but.play();
 		}
 	}
 
@@ -149,12 +152,13 @@ var toggle = "off";
 			floormp.play();
 			toggle = "on";
 			bx.style.opacity = 1;
-			poom2.style.display = "inline";}
+			poom2.style.display = "inline";
+		but.play();}
 			else{
 			toggle = "off";
 			bx.style.opacity = 0;
 			poom2.style.display = "none";
-			
+			but.play();
 		}
 	}
 
